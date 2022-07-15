@@ -1,4 +1,5 @@
 .App {
+  padding: 10rem;
   text-align: center;
 }
 
@@ -35,4 +36,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.table-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.table-footer > nav {
+  text-align: left;
+}
+.table-footer > div {
+  text-align: right;
 }
