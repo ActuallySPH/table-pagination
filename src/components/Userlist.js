@@ -1,7 +1,7 @@
 export default function Userlist({ userlist, loading }) {
     if(loading){
         return <tr>
-            <td>Loading...</td>
+            <td>Loading....</td>
         </tr>
     }
 
