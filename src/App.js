@@ -9,6 +9,7 @@ import Table from 'react-bootstrap/Table';
 import Userlist from './components/Userlist';
 import Pagination from './components/Pagination';
 import DropDown from './components/DropDown';
+import Header from './components/Header';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -46,7 +47,8 @@ function App() {
   const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
 
   return (
-    <div className="App">
+    <div className="container py-3">
+      <Header />
       <Table striped bordered hover variant="light">
         <thead>
           <tr>
