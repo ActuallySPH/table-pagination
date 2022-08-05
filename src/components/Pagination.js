@@ -10,17 +10,17 @@ export default function Pagination({usersPerPage, totalUsers, paginate, currentP
     <nav>
     <ul className="pagination"> 
         <li>
-            <a onClick={() => paginate(currentPage - 1)} href="/" className="page-link" >Previous</a>
+            <button onClick={() => paginate(currentPage - 1)} className="page-link" >Previous</button>
         </li>
         {pageNumber.map(number => (
             <li key={number} className={`page-item ${currentPage === number ? "active" : ""}`} >
-                <a onClick={() => paginate(number)} href="/" className="page-link">
+                <button onClick={() => paginate(number)} className="page-link">
                     {number}
-                </a>
+                </button>
             </li>    
         ))}
         <li>
-            <a onClick={() => paginate(currentPage + 1)} href="/" className="page-link">Next</a>
+            <button onClick={() => paginate(currentPage + 1)} className="page-link">Next</button>
         </li>
     </ul>
     </nav>
